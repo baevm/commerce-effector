@@ -1,6 +1,9 @@
+import { motion } from 'framer-motion'
 import React from 'react'
-import Leftbar from './Leftbar'
+import Leftbar from './Leftbar/Leftbar'
 import Rightbar from './Rightbar'
+
+
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (

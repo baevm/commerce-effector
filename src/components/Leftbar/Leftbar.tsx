@@ -1,10 +1,12 @@
 import { AnimatePresence, motion, useAnimationControls } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useEffect, useRef, useState } from 'react'
 import { IoLogoFacebook, IoLogoGoogle, IoLogoInstagram, IoLogoTwitter, IoMapSharp, IoMenu } from 'react-icons/io5'
-import useClickOutside from '../hooks/useClickOutside'
-import ActionIcon from './ActionIcon'
+import useClickOutside from '../../hooks/useClickOutside'
+import ActionIcon from '../ActionIcon'
+import Logo from './Logo'
 
 const socialLinks = [
   { id: 1, icon: <IoLogoTwitter size={20} color='#313025' /> },
@@ -41,6 +43,7 @@ const Leftbar = () => {
   const menuRef = useRef<HTMLDivElement | null>(null)
   const [isOpen, setIsOpen] = useState(false)
   const constrols = useAnimationControls()
+  const router = useRouter()
 
   useClickOutside(menuRef, () => setIsOpen(false))
 
@@ -51,9 +54,9 @@ const Leftbar = () => {
   return (
     <>
       <div className='hidden flex-col items-center justify-between px-8 py-6 lg:flex'>
-        <div className='rotate-[30deg]'>
-          <Image src='/sneaker.png' width='52' height='52' alt='logo' />
-        </div>
+        <Link href='/'>
+          <Logo />
+        </Link>
         <ActionIcon onClick={() => setIsOpen(true)}>
           <IoMenu size={32} color='#313025' />
         </ActionIcon>
@@ -80,9 +83,7 @@ const Leftbar = () => {
             className={`absolute z-50 flex h-full w-full bg-white lg:w-1/2`}>
             <motion.div initial='closed' animate='open' exit='closed' variants={sideVariants} className='w-full'>
               <div className='flex h-full w-10/12 flex-col justify-around p-44'>
-                <div className='rotate-[30deg]'>
-                  <Image src='/sneaker.png' width='52' height='52' alt='logo' />
-                </div>
+                <Logo />
                 <div>
                   {links.map((link) => (
                     <motion.div key={link.id} whileHover={{ scale: 1.1 }} variants={itemVariants}>
