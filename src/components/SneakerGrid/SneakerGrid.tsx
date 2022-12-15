@@ -25,7 +25,7 @@ const SneakerGrid = ({ sneakers, currPage, pageAmount, setCurrPage }: Props) => 
   }
 
   return (
-    <div className='z-50 h-full w-full lg:w-1/2'>
+    <div className='h-full w-full'>
       <div className='grid h-full w-full grid-cols-2 grid-rows-3 gap-0'>
         {sneakers.map((sneaker: any) => (
           <SneakerItem sneaker={sneaker} key={sneaker.id} />

@@ -1,9 +1,11 @@
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
-import Layout from '../components/Layout'
-import SneakerGrid from '../components/SneakerGrid/SneakerGrid'
-import data from '../../public/data.json'
 import Link from 'next/link'
+import { useState } from 'react'
+import data from '../../public/data.json'
+import AppLayout from '../components/Layouts/AppLayout'
+import LeftAnimLayout from '../components/Layouts/LeftAnimLayout'
+import RightAnimLayout from '../components/Layouts/RightAnimLayout'
+import SneakerGrid from '../components/SneakerGrid/SneakerGrid'
 
 export default function Home() {
   const sneakersPerPage = 4
@@ -15,19 +17,21 @@ export default function Home() {
   const sneakersMap = sneakers.slice(currPage * sneakersPerPage - sneakersPerPage + 1, currPage * sneakersPerPage + 1)
 
   return (
-    <Layout>
+    <AppLayout>
       <div className='flex h-full w-full flex-col lg:flex-row'>
-        <div className='relative h-full w-full lg:w-1/2' style={{ backgroundColor: mainSneaker.color }}>
-          <div className='relative h-full w-full min-w-[300px]'>
-            <Image src={mainSneaker.image_url} style={{ objectFit: 'contain' }} fill alt='sneaker' quality={100} />
+        <LeftAnimLayout>
+          <div className='h-full w-full' style={{ backgroundColor: mainSneaker.color }}>
+            <Image src={mainSneaker.image_url} style={{ objectFit: 'contain' }} fill alt={mainSneaker.label} quality={100} />
             <Link href={`/${mainSneaker.id}`}>
               <div className='text-c absolute bottom-[20%] right-[10%] text-gray-700'>{mainSneaker.label}</div>
             </Link>
           </div>
-        </div>
+        </LeftAnimLayout>
 
-        <SneakerGrid sneakers={sneakersMap} pageAmount={pageAmount} currPage={currPage} setCurrPage={setCurrPage} />
+        <RightAnimLayout>
+          <SneakerGrid sneakers={sneakersMap} pageAmount={pageAmount} currPage={currPage} setCurrPage={setCurrPage} />
+        </RightAnimLayout>
       </div>
-    </Layout>
+    </AppLayout>
   )
 }

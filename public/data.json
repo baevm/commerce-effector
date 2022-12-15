@@ -51,19 +51,12 @@
     {
       "id": 7,
       "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/nike-dunk-high-chocolate-1-1000_800x.png?v=1660576907",
-      "color": "#3D315B",
+      "color": "#B7D5D4",
       "label": "Nike Dunk High Chocolate",
       "price": 199,
       "size": [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5]
     },
-    {
-      "id": 8,
-      "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/air-jordan-1-low-mocha-1-1000_800x.png?v=1659353801",
-      "color": "#BFDBFE",
-      "label": "Air Jordan 1 Low Mocha",
-      "price": 199,
-      "size": [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5]
-    },
+
     {
       "id": 9,
       "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/nike-dunk-low-racer-blue-white-1-1000_900x.png?v=1660737658",

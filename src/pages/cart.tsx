@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { IoCloseSharp } from 'react-icons/io5'
-import Layout from '../components/Layout'
+import AppLayout from '../components/Layouts/AppLayout'
 import $cartStore, { addToCart, removeFromCart } from '../store/cart'
 
 const CartPage = () => {
@@ -14,7 +14,7 @@ const CartPage = () => {
   }
 
   return (
-    <Layout>
+    <AppLayout>
       <div className='flex h-full w-full flex-col items-center justify-center  bg-[#F3F3F5]'>
         {cart.length > 0 ? (
           cart.map((sneaker) => (
@@ -36,7 +36,7 @@ const CartPage = () => {
         )}
         {totalPrice > 0 && <div>Total price: {totalPrice}</div>}
       </div>
-    </Layout>
+    </AppLayout>
   )
 }
 
