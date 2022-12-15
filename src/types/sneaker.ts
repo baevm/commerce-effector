@@ -4,6 +4,7 @@ interface ISneaker {
   color: string
   label: string
   price: number
+  size: number[]
 }
 
 export default ISneaker

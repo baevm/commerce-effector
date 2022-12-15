@@ -5,84 +5,96 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/air-jordan-1-low-mocha-1-1000_800x.png?v=1659353801",
       "color": "#BFDBFE",
       "label": "Air Jordan 1 Low Mocha",
-      "price": 150
+      "price": 150,
+      "size": [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5]
     },
     {
       "id": 2,
       "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/nike-dunk-low-racer-blue-white-1-1000_900x.png?v=1660737658",
       "color": "#F1E8B8",
       "label": "Nike Dunk Low Racer Blue",
-      "price": 179
+      "price": 179,
+      "size": [6, 6.5, 7, 7.5, 8.5, 9, 9.5, 10.5, 11, 11.5, 12, 12.5]
     },
     {
       "id": 3,
       "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/nike-dunk-low-rose-whisper-1-1000_600x.png?v=1660576566",
       "color": "#F3F3F5",
       "label": "Nike Dunk Low Rose Whisper",
-      "price": 199
+      "price": 199,
+      "size": [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5]
     },
     {
       "id": 4,
       "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/nike-dunk-low-goldenrod-1-1000_800x.png?v=1658844459",
       "color": "#FFCED3",
       "label": "Nike Dunk Low Goldenrod",
-      "price": 199
+      "price": 199,
+      "size": [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5]
     },
     {
       "id": 5,
       "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/nike-dunk-low-next-nature-vast-grey-1-1000_900x.png?v=1660742406",
       "color": "#C5E6A6",
       "label": "Nike Dunk Low Next Nature",
-      "price": 199
+      "price": 199,
+      "size": [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 11.5, 12, 12.5]
     },
     {
       "id": 6,
       "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/nike-air-force-1-low-supreme-box-logo-white-1-1000_800x.png?v=1651327806",
       "color": "#477890",
       "label": "Nike Air Force 1 Low Supreme",
-      "price": 230
+      "price": 230,
+      "size": [10, 10.5, 11, 11.5, 12, 12.5]
     },
     {
       "id": 7,
       "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/nike-dunk-high-chocolate-1-1000_800x.png?v=1660576907",
       "color": "#3D315B",
       "label": "Nike Dunk High Chocolate",
-      "price": 199
+      "price": 199,
+      "size": [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5]
     },
     {
       "id": 8,
       "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/air-jordan-1-low-mocha-1-1000_800x.png?v=1659353801",
       "color": "#BFDBFE",
       "label": "Air Jordan 1 Low Mocha",
-      "price": 199
+      "price": 199,
+      "size": [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5]
     },
     {
       "id": 9,
       "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/nike-dunk-low-racer-blue-white-1-1000_900x.png?v=1660737658",
       "color": "#F1E8B8",
       "label": "Nike Dunk Low Racer Blue",
-      "price": 150
+      "price": 150,
+      "size": [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5]
     },
     {
       "id": 10,
       "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/nike-dunk-low-rose-whisper-1-1000_600x.png?v=1660576566",
       "color": "#F3F3F5",
       "label": "Nike Dunk Low Rose Whisper",
-      "price": 199
+      "price": 199,
+      "size": [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5]
     },
     {
       "id": 11,
       "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/nike-dunk-low-goldenrod-1-1000_800x.png?v=1658844459",
       "color": "#FFCED3",
       "label": "Nike Dunk Low Goldenrod",
-      "price": 199
+      "price": 199,
+      "size": [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5]
     },
     {
       "id": 12,
       "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/nike-dunk-low-next-nature-vast-grey-1-1000_900x.png?v=1660742406",
       "color": "#4C8577",
       "label": "Nike Dunk Low Next Nature",
-      "price": 199
+      "price": 199,
+      "size": [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5]
     }
   ]
 }

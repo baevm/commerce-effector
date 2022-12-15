@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
-import SneakerItem from './SneakerItem'
 import { IoArrowBack, IoArrowForward } from 'react-icons/io5'
-import ActionIcon from '../ActionIcon'
 import ISneaker from '../../types/sneaker'
+import ActionIcon from '../ActionIcon'
 import PageType from './PageType'
+import SneakerItem from './SneakerItem'
 
 type Props = {
   sneakers: ISneaker[]

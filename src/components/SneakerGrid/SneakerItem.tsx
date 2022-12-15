@@ -22,18 +22,8 @@ const SneakerItem = ({ sneaker }: { sneaker: ISneaker }) => {
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}>
       {isHover && (
-        <div className='absolute flex w-full items-center justify-between'>
-          <div className='mt-6 ml-8 flex h-14 w-14 items-center justify-center rounded-full bg-black text-white opacity-20 shadow-xl'>
-            {sneaker.price} $
-          </div>
-          <button
-            onClick={(e) => {
-              e.stopPropagation()
-              handleAddToCart(sneaker)
-            }}
-            className='z-50 mt-6 mr-8 flex h-14 w-14 items-center justify-center rounded-full bg-black text-white opacity-20 shadow-2xl'>
-            <IoBagAdd size={24} />
-          </button>
+        <div className='mt-6 ml-8 flex h-14 w-14 items-center justify-center rounded-full bg-black text-white opacity-20 shadow-xl'>
+          {sneaker.price} $
         </div>
       )}
       <Image src={sneaker.image_url} style={{ objectFit: 'contain' }} fill alt={sneaker.label} />
