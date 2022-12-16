@@ -1,10 +1,9 @@
 import { useStore } from 'effector-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 import { IoCloseSharp } from 'react-icons/io5'
 import AppLayout from '../components/Layouts/AppLayout'
-import $cartStore, { addToCart, removeFromCart } from '../store/cart'
+import $cartStore, { removeFromCart } from '../store/cart'
 
 const CartPage = () => {
   const { cart, totalPrice } = useStore($cartStore)
@@ -17,9 +16,9 @@ const CartPage = () => {
     <AppLayout>
       <div className='flex h-full w-full flex-col items-center justify-center  bg-[#F3F3F5]'>
         {cart.length > 0 ? (
-          cart.map((sneaker) => (
-            <div key={sneaker.id} className='flex gap-4 rounded-sm bg-white p-6'>
-              <Image src={sneaker.image_url} alt={sneaker.label} />
+          cart.map(({ sneaker }) => (
+            <div key={sneaker.id} className='flex items-center justify-center gap-4 rounded-sm bg-white p-6'>
+              <Image src={sneaker.image_url} alt={sneaker.label} width='128' height='64' />
               <div>{sneaker.label}</div>
               <button onClick={() => handleRemove(sneaker.id)}>
                 <IoCloseSharp size={24} />

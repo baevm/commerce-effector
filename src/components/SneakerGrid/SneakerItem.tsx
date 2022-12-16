@@ -1,22 +1,20 @@
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import React, { useState } from 'react'
-import { IoBagAdd, IoBagCheck } from 'react-icons/io5'
-import { addToCart } from '../../store/cart'
+import { useState } from 'react'
 import ISneaker from '../../types/sneaker'
 
-const SneakerItem = ({ sneaker }: { sneaker: ISneaker }) => {
+const SneakerItem = ({ sneaker, index }: { sneaker: ISneaker; index: any }) => {
   const [isHover, setIsHover] = useState(false)
   const router = useRouter()
 
-  const handleAddToCart = (sneaker: ISneaker) => {
-    console.log(sneaker)
-    addToCart(sneaker)
-  }
-
   return (
-    <div
-      className='relative cursor-pointer '
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className='relative cursor-pointer'
       style={{ backgroundColor: sneaker.color }}
       onClick={() => router.push(`/${sneaker.id}`)}
       onMouseEnter={() => setIsHover(true)}
@@ -32,7 +30,7 @@ const SneakerItem = ({ sneaker }: { sneaker: ISneaker }) => {
           {sneaker.label}
         </div>
       )}
-    </div>
+    </motion.div>
   )
 }
 

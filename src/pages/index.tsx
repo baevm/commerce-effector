@@ -9,7 +9,7 @@ import SneakerGrid from '../components/SneakerGrid/SneakerGrid'
 
 export default function Home() {
   const sneakersPerPage = 4
-  const pageAmount = Math.ceil(data.sneakers.length / sneakersPerPage)
+  const pageAmount = Math.floor(data.sneakers.length / sneakersPerPage)
   const [currPage, setCurrPage] = useState(1)
   const sneakers = data.sneakers
 

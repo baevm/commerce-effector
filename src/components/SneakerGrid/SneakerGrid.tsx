@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from 'framer-motion'
 import { IoArrowBack, IoArrowForward } from 'react-icons/io5'
 import ISneaker from '../../types/sneaker'
 import ActionIcon from '../ActionIcon'
@@ -27,9 +28,11 @@ const SneakerGrid = ({ sneakers, currPage, pageAmount, setCurrPage }: Props) => 
   return (
     <div className='h-full w-full'>
       <div className='grid h-full w-full grid-cols-2 grid-rows-3 gap-0'>
-        {sneakers.map((sneaker: any) => (
-          <SneakerItem sneaker={sneaker} key={sneaker.id} />
-        ))}
+        <AnimatePresence mode='wait'>
+          {sneakers.map((sneaker: any, index) => (
+            <SneakerItem sneaker={sneaker} key={sneaker.id} index={index} />
+          ))}
+        </AnimatePresence>
 
         <div className='col-start-1 col-end-1 row-start-3 row-end-3 flex items-center justify-around text-4xl '>
           <ActionIcon onClick={handleBack}>

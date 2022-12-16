@@ -88,6 +88,22 @@
       "label": "Nike Dunk Low Next Nature",
       "price": 199,
       "size": [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5]
+    },
+    {
+      "id": 13,
+      "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/nike-dunk-low-rose-whisper-1-1000_600x.png?v=1660576566",
+      "color": "#F3F3F5",
+      "label": "Nike Dunk Low Rose Whisper",
+      "price": 199,
+      "size": [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5]
+    },
+    {
+      "id": 14,
+      "image_url": "https://cdn.shopify.com/s/files/1/0641/4381/8989/products/nike-dunk-low-next-nature-vast-grey-1-1000_900x.png?v=1660742406",
+      "color": "#C5E6A6",
+      "label": "Nike Dunk Low Next Nature",
+      "price": 199,
+      "size": [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 11.5, 12, 12.5]
     }
   ]
 }
