@@ -5,7 +5,7 @@ import Rightbar from '../Rightbar'
 
 const AppLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className='flex h-screen w-screen overflow-hidden font-PSR'>
+    <div className='flex h-screen w-screen flex-col lg:flex-row overflow-hidden font-PSR'>
       <Leftbar />
       <div className='h-full w-full'>{children}</div>
       <Rightbar />

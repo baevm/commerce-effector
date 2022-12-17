@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { IoArrowBack, IoArrowForward } from 'react-icons/io5'
 import ISneaker from '../../types/sneaker'
-import ActionIcon from '../ActionIcon'
+import ActionIcon from '../Common/ActionIcon'
 import PageType from './PageType'
 import SneakerItem from './SneakerItem'
 

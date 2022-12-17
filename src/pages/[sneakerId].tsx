@@ -25,15 +25,15 @@ const SneakerPage = ({ sneaker }: { sneaker: ISneaker }) => {
 
   return (
     <AppLayout>
-      <div className='flex h-full w-full'>
+      <div className='flex h-full w-full flex-col lg:flex-row'>
         <LeftAnimLayout>
-          <div className='h-full w-full' style={{ backgroundColor: sneaker?.color }}>
+          <div className='h-full min-h-[300px] w-full' style={{ backgroundColor: sneaker?.color }}>
             <Image src={sneaker?.image_url} style={{ objectFit: 'contain' }} fill alt={sneaker.label} quality={100} />
           </div>
         </LeftAnimLayout>
 
         <RightAnimLayout>
-          <div className='h-full w-full border-l-[1px] bg-[#F3F3F5] px-12 py-24'>
+          <div className='h-[500px] w-full overflow-y-auto border-l-[1px] bg-[#F3F3F5] px-12 py-24 lg:h-full'>
             <div>
               <h1 className='text-2xl font-semibold'>{sneaker?.label}</h1>
               <h3>${sneaker?.price}</h3>

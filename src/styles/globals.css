@@ -120,6 +120,12 @@
 
 @layer utilities {
   .text-active {
-    color: #D7C4EB;
+    color: #d7c4eb;
+  }
+}
+
+@layer utilities {
+  .writing-mode-vertical-lr {
+    writing-mode: vertical-lr;
   }
 }
